@@ -15,12 +15,14 @@ Gem::Specification.new do |spec|
   spec.summary       = Array2Hash::DESCRIPTION
   spec.description   = Array2Hash::DESCRIPTION
   spec.homepage      = "http://github.com/v0dro/array2hash"
-  spec.license       = 'BSD-2'
+  spec.license       = 'BSD-3-Clause'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+  spec.extensions    = ['ext/array2hash/extconf.rb']
 
   spec.add_development_dependency 'rubex', '~> 0.1'
+  spec.add_development_dependency 'rake', '~> 11.2'
 end
