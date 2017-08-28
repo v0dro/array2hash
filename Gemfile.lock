@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    array2hash (0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    racc (1.4.14)
+    rake (12.0.0)
+    rake-compiler (1.0.4)
+      rake
+    rubex (0.1)
+      racc (~> 1.4.14)
+      rake-compiler (~> 1.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  array2hash!
+  rubex (~> 0.1)
+
+BUNDLED WITH
+   1.15.3
