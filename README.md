@@ -60,6 +60,6 @@ The use with the `convert` class method:
 ``` ruby
 require 'array2hash'
 
-a = (1..1000).to_a.map(:&to_s)
+a = (1..1000).to_a.map(&:to_s)
 Array2Hash.convert a
 ```
